@@ -1,0 +1,69 @@
+<div class="burgerHeader">
+
+<img src="/assets/img/burger.png" alt="burger" style="width: 400px; height: 400px;">
+<h1>EAT DA BURGER!</h1>
+
+</div>
+
+
+{{!-- Burgers that are not devoured --}}
+
+<div class="clearfix">
+
+<div class = "burgerContainer">
+  {{#each burgers}}
+    {{#unless devoured}}
+
+    <div class="wrapper">
+
+        <button class="change-devoured" data-id="{{id}}" data-newdevoured=1>
+            {{#if devoured}}Make another!{{else}}DEVOUR!{{/if}}
+        </button>
+
+        <div class="notDevouredBurger">      
+        {{id}}.{{burger_name}}
+        </div>
+
+       
+    </div>
+
+    {{/unless}}
+  {{/each}}
+
+</div>
+
+<div class = "burgerContainer">
+
+{{!-- Burgers that have been devoured --}}
+
+  {{#each burgers}}
+    {{#if devoured}}
+
+
+
+        <div class="devouredBurger">
+	    {{id}}.{{burger_name}}
+        </div>
+  
+    {{/if}}
+  {{/each}}
+
+</div>
+
+</div>
+
+<div class = "addBurger">
+<form class="create-form">
+
+  <div class="form-group">
+    <textarea id="bu"></textarea>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+</div>
+
+
+
+
