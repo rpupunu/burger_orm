@@ -1,4 +1,5 @@
 var mysql = require("mysql");
+var connection;
 
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -24,4 +25,4 @@ connection.connect(function (err) {
 
 pool.query('select 1 + 1', (err,rows) => { /* */ });
 
-module.exports = pool;
+module.exports = connection;
