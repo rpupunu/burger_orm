@@ -1,5 +1,5 @@
 var mysql = require("mysql");
-var connection;
+
 
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -9,7 +9,7 @@ if (process.env.JAWSDB_URL) {
       port: 3306,
       user: 'root',
       password: 'rootroot',
-      database: burgers_db
+      database: "burgers_db"
 
     });
 };
@@ -20,7 +20,7 @@ connection.connect(function (err) {
         console.log("Error Connection: " + err.stack);
         return;
     }
-    console.log("Connected as id " + pool.threadId);
+    console.log("Connected as id " + connection.threadId);
 });
 
 
