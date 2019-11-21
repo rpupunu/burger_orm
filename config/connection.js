@@ -23,6 +23,5 @@ connection.connect(function (err) {
     console.log("Connected as id " + pool.threadId);
 });
 
-pool.query('select 1 + 1', (err,rows) => { /* */ });
 
 module.exports = connection;
