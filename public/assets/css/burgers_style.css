@@ -1,73 +1,73 @@
-img-head {
-  height: 250px;
-  width: 250px;
+body {
+  background-color: orange;
 }
 
-.con-head {
-  background-color: rgba(0, 0, 0, 0.335);
-  color: white;
-  padding: 5px 0px 0px 20px;
-}
-.con-con {
-  background-color: rgba(0, 0, 0, 0.335);
-}
-.con-bod {
-  background-color: rgba(0, 0, 0, 0.335);
-  text-align:center;
-}
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index:-10;
-}
-.col-head-img {
-  text-align: left;
-}
-.col-head-head {
-  text-align: center;
-}
-.h1-title {
-  font-family: 'Metal Mania', cursive;
-  font-size: 6em;
-  color: rgb(109, 16, 16);
-  text-shadow:5px 10px 10px red;
-}
-.h1-title2 {
-  font-family: 'Indie Flower', cursive;
-  font-size: 4em;
-  color: rgb(255, 230, 0);
-  text-decoration: line-through;
-}
-
-.h2-2 {
-  font-family: 'Eater', cursive;
-  color: greenyellow;
-  text-shadow:5px 10px 10px green;
-}
-.body-burger {
-  margin: 5px;
-  padding: 10px;
-  text-align: center;
-}
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {
   font-weight: bold;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
 .form-group {
   margin-bottom: 5px;
+}
+
+.burgerContainer {
+  width: 50%;
+  float: left;
+}
+
+.change-devoured {
+  float: right;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.notDevouredBurger {
+  background-color: white;
+  width: 30%;
+  height: 75px;
+  float: right;
+}
+
+.devouredBurger {
+  background-color: white;
+  width: 30%;
+  height: 75px;
+  margin-bottom: 1%;
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+  float: right;
+}
+
+
+.burgerHeader,
+.addBurger {
+  text-align: center;
+  align-content: center;
+  color: red;
+}
+
+.addBurger {
+  border-top: 3px solid orangered;
+  padding-top: 1%;
+  margin-top: 1%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+textarea {
+  width: 30%;
+  height: 75px;
 }
