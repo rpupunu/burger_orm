@@ -17,6 +17,11 @@ var burger = {
             cb(res);
         });
     },
+    delete: function(condition, cb) {
+        orm.delete("burgers", condition, function(res) {
+            cb(res);
+        });
+    }
 };
 
 // Export the database function for the controller burgers_controllers.js
