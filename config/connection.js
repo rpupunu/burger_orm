@@ -1,6 +1,7 @@
+// SET UP MYSQL
 var mysql = require("mysql");
 
-
+// SET UP CONNECTION FOR JAWSDB ON HEROKU AND DEFAULT TO LOCALHOST
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -14,7 +15,7 @@ if (process.env.JAWSDB_URL) {
     });
 };
 
-
+// MAKE CONNECTION ON CONSOLE LOG ERRORS 
 connection.connect(function (err) {
     if(err) {
         console.log("Error Connection: " + err.stack);
@@ -23,5 +24,5 @@ connection.connect(function (err) {
     console.log("Connected as id " + connection.threadId);
 });
 
-
+// EXPORT CONNECTION FOR THE ORM TO USE
 module.exports = connection;
