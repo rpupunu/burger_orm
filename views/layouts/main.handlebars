@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-		<title>Eat Da Burger!</title>
-	{{!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="/assets/js/burgers.js"></script>
-		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/assets/css/burgers_style.css" type="text/css" />
-	</head>
-	<body>
+	<title>Eat Da Burger!</title>
+{{!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/assets/js/burgers.js"></script>
+	{{!-- <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet' type='text/css'> --}}
+	<link rel="stylesheet" href="/assets/css/burgers_style.css" type="text/css" />
+</head>
+<body>
+	<container>
+		<img src="/assets/img/hamburger.png" alt="burger_pic" class="pic" style="width: 350px; ">
+		<h1 class="header1">Eat-Da-Burger!</h1>
+		{{!-- body in used from the index.handlebars --}}
 		{{{ body }}}
-	</body>
+	</container>
+</body>
 </html>

@@ -1,73 +1,82 @@
-body {
-  background-color: orange;
+body { 
+  background-color: #a2d454;
+  font-family: monospace;
+  padding-right: 5%;
 }
 
-li {
-  padding: 5px;
-  margin: 5px;
+ul {
+  list-style-type: none;
 }
 
-.label {
-  font-weight: bold;
+/* text color */
+.devoured { 
+  color: black;
 }
 
-.form-group {
+/* text color */
+.noteaten {
+  color:black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-style: solid;
+  border-color: #8a481b;
+  background-color: #fccf6b;
+}
+
+.devoured {
+  flex-grow: 1;
+background: #919191;
+padding: 0.5em 2em 1.7em 2em;
+/* margin: 1em 0 1em 1em; */
+}
+
+.not-devoured {
+  flex-grow: 1;
+padding: 0.5em 2em 1.7em 2em;
+background: #919191;
+/* margin: 1em 1em 1em 0;  */
+}
+
+.noteated {
+  padding: 0.5em 2em 1.7em 2em;
+}
+
+.burgers-container {
+  display: flex;
+  margin-right: 3%;
+  border-color: #8a481b;
+  border-style: solid;
+}
+
+.header1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 25px;
   margin-bottom: 5px;
 }
 
-.burgerContainer {
-  width: 50%;
-  float: left;
+h3 {
+  font-size: 18px;
+  margin-top: 5px;
 }
 
-.change-devoured {
-  float: right;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+button {
+  font-family: monospace;
+  padding: 3px 5px 5px 3px;
 }
-
-.notDevouredBurger {
-  background-color: white;
-  width: 30%;
-  height: 75px;
-  float: right;
-}
-
-.devouredBurger {
-  background-color: white;
-  width: 30%;
-  height: 75px;
-  margin-bottom: 1%;
-}
-
-.wrapper {
-  width: 100%;
+.add-a-burger-container {
   text-align: center;
-  padding: 1%;
-  float: right;
-}
-
-
-.burgerHeader,
-.addBurger {
-  text-align: center;
-  align-content: center;
-  color: red;
-}
-
-.addBurger {
-  border-top: 3px solid orangered;
-  padding-top: 1%;
-  margin-top: 1%;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-textarea {
-  width: 30%;
-  height: 75px;
 }

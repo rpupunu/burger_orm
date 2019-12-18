@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-sm-6">
+        <li class={{#if devoured}}"devoured"{{else}}"noteated"{{/if}}>
+            <h3><span class="label"></span>{{this.id}}. {{this.burger_name}}</h3>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary change-devoured" data-id="{{this.id}}" data-newdevoured="{{this.devoured}}">{{#if devoured}}UNDO{{else}}DEVOUR{{/if}}</button>
+                <button type="button" class="btn btn-secondary delete-burger" data-id="{{this.id}}">DELETE</button>
+            </div>
+        </li>
+    </div>
+</div>

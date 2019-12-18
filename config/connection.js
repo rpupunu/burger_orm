@@ -21,7 +21,7 @@ connection.connect(function (err) {
         console.log("Error Connection: " + err.stack);
         return;
     }
-    console.log("Connected as id " + connection.threadId);
+    console.log("Connected as id: " + connection.threadId);
 });
 
 // EXPORT CONNECTION FOR THE ORM TO USE

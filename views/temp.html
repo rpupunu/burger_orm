@@ -1,0 +1,45 @@
+<div class="container">
+
+    <div class="burgers-container">
+    {{!-- why does the src work without a / in front of assets and on the main page it does with one --}}
+    <img src="assets/img/burger.jpg" alt="burger" style="width: 200px; height: 200px;">
+      
+      {{!--BURGERS THAT HAVENT BEEN DEVOURED--}}
+      <div class="not-devoured">
+        <h2>Burgers that have note been eaten!</h2>
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{>burgers/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+  
+      {{!--BURGERS THAT HAVENT BEEN DEVOURED--}}
+      <div class="devoured">
+        <h2>Burgers that have been devoured!</h2>
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{>burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  
+    <div class="add-a-burger-container">
+      <h2>Add a Burger</h2>
+      <form class="create-form">
+        <div class="form-group col">
+          <textarea id="burg" name="name" rows="2" cols="40"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Add Burger</button>
+      </form>
+    </div>
+  </div>
+  
+  
+  
+  
